@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prompt Engineering en Agentes de IA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+
+<body>
+    <canvas id="starCanvas"></canvas>
+
+    <div class="decoration-circle"></div>
+    <div class="decoration-circle"></div>
+    <div class="decoration-circle"></div>
+
+    <main class="main-container">
+        <section class="hero">
+            <div class="moon-symbol fade-in">
+                <i data-lucide="moon-star"></i>
+            </div>
+            <h1 class="fade-in">Prompt Engineering en <br>
+                               <span>Agentes de IA</span></h1>
+            <p class="subtitle fade-in">Comparativa de capacidad de resolución autónoma entre dos Agentes de IA
+
+            </p>
+        </section>
+
+        <section class="cards-grid">
+            <article class="premium-card fade-in">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-gem-icon lucide-gem"><path d="M10.5 3 8 9l4 13 4-13-2.5-6"/><path d="M17 3a2 2 0 0 1 1.6.8l3 4a2 2 0 0 1 .013 2.382l-7.99 10.986a2 2 0 0 1-3.247 0l-7.99-10.986A2 2 0 0 1 2.4 7.8l2.998-3.997A2 2 0 0 1 7 3z"/><path d="M2 9h20"/></svg>
+                </div>
+                <h3>Prompt</h3>
+                <p>Prompt utilizado para generar la landing page de BONNY    
+                </p>
+
+                <button class="card-button" onclick="abrirModal()">
+                Ver Prompt
+                </button>
+            </article>
+
+            <article class="premium-card fade-in">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand-icon lucide-wand"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+                </div>
+                <h3>Landing Page 1</h3>
+                <p>Landing generada por CURSOR utilizando COMPOSER 2.5 fast.</p>
+                <a href="./landing1/index.html" target="_blank" class="card-button">Abrir Landing</a>
+            </article>
+
+            <article class="premium-card fade-in">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-wand-icon lucide-wand"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h.01"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+                </div>
+                <h3>Landing Page 2</h3>
+                <p>Landing generada por DEVIN utilizando SWE- 1.6 slow.</p>
+                <a href="./landing2/index.html" target="_blank" class="card-button">Abrir Landing</a>
+            </article>
+        </section>
+
+
+    <footer class="footer">
+    <p>DSW-Frontend- PFO2<span>•</span> Vanesa Aracena</p>
+</footer>
+
+</main>
+
+<!-- MODAL DEL PROMPT -->
+
+<div id="promptModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="cerrarModal()">
+            &times;
+        </span>
+
+        <h2><span class="highlight">Prompt Utilizado</span></h2>
+
+        <div class="prompt-text">
+
+            <pre>
+            You are an award-winning Art Director, Luxury Brand Designer, UX/UI Designer, and Senior Front-End Developer.
+            Create a premium editorial landing page for BONNY, a boutique artisanal self-care brand focused on ritual 
+            beauty and botanical fragrances.
+            Design a website that feels like a luxury fragrance house and ritual beauty atelier rather than a typical 
+            e-commerce store.
+
+            The experience should evoke:
+            Calmness
+            Well-being
+            Self-care
+            Botanical rituals
+            Sensory experiences
+            Connection with nature
+            Connection with our body
+            Slow beauty
+            Modern mysticism
+            Lunar inspiration
+
+            Visitors should feel invited to pause, breathe, reconnect with themselves, and create intentional fragrance 
+            rituals in their daily lives.
+
+            <span class="highlight">Brand</span>
+            BONNY creates handcrafted products for personal rituals and conscious self-care:
+
+            Perfumes
+            Natural Soaps
+            Hair Mist
+            Hair & Body Mist
+            Body Butter
+            Natural Deodorant
+
+            The brand should feel artisanal, intimate, elegant, warm, and authentic.
+
+            <span class="highlight">Visual Direction</span>
+            Create a minimalist, editorial, sophisticated, and luxurious design.
+
+            Use:
+            Large elegant serif typography
+            Editorial magazine-inspired layouts
+            Generous white space
+            Asymmetrical compositions
+            Fine botanical illustrations
+            Organic line art
+            Celestial symbols
+            Moon phases
+            Subtle animations
+            Strong visual hierarchy
+
+            Avoid:
+            Corporate layouts
+            SaaS aesthetics
+            Generic templates
+            Bootstrap-like designs
+            Overcrowded sections
+            Aggressive marketing visuals
+
+            <span class="highlight">Color Palette</span>
+
+            Primary Colors:
+            Warm Nude #D9B89C
+            Terracotta #C86D38
+
+            Neutrals:
+            Warm White #FAF8F5
+
+            Accent Colors (use sparingly):
+            Dusty Lavender #8A69B8
+            Deep Indigo #2F477A
+
+            The design should be primarily built around Warm Nude and Terracotta.
+
+            <span class="highlight">Required Sections</span>
+            Header with logo and navigation menu.
+
+            Hero Section with:
+            Emotional headline
+            Brand statement
+            Call-to-action button
+
+            About BONNY:
+            Brand story
+            Ritual philosophy
+            Botanical inspiration
+
+            Products:
+            Perfume
+            Natural Soap
+            Hair Mist
+            Hair & Body Mist
+            Body Butter
+            Natural Deodorant
+
+            Each product should include:
+            Symbolic illustration
+            Product title
+            Short poetic description
+
+            Brand Values:
+            Handmade
+            Natural ingredients
+            Small-batch production
+            Cruelty-free
+            Conscious self-care
+
+            Testimonials:
+            Include 3 realistic testimonials
+
+            Contact Form:
+            Name
+            Email
+            Message
+            Visual only, no backend required
+
+            Footer:
+            Brand statement
+            Instagram
+            Facebook
+            Pinterest
+            TikTok
+
+            <span class="highlight">Language</span>
+            All visible content must be written in fluent Argentine Spanish.
+            Do not mix English and Spanish.
+            Use elegant, poetic, warm, sensory, and editorial copywriting.
+            Avoid generic marketing language.
+
+            <span class="highlight">Technical Requirements</span>
+            
+            No inline CSS inside HTML
+            No style tags inside HTML
+            No embedded scripts unless required
+            Fully structured as a real production project
+            All assets referenced via relative paths
+            No frameworks (no React, no Tailwind, no Bootstrap)
+            Fully responsive and mobile-first
+            Semantic HTML5 and accessible structure
+
+            <span class="highlight">Output Format</span>
+            Provide the project as separate files:
+            index.html
+            styles.css
+            script.js (if needed)
+            
+            Do not combine them into a single file.
+            </pre>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+    
+</body>
+
+</html>

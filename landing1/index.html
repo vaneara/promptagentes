@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BONNY — Atelier de rituales botánicos. Perfumes artesanales, cuidado consciente y belleza lenta hecha a mano.">
+  <title>BONNY — Rituales Botánicos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <a href="#contenido" class="skip-link">Ir al contenido</a>
+
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="#" class="logo" aria-label="BONNY — Inicio">BONNY</a>
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+        <a href="#nosotros" class="nav__link">Nosotros</a>
+        <a href="#productos" class="nav__link">Productos</a>
+        <a href="#valores" class="nav__link">Valores</a>
+        <a href="#testimonios" class="nav__link">Testimonios</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <svg class="hero__moon float" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+        <circle cx="60" cy="60" r="55" stroke="#C86D38" stroke-width="0.5" opacity="0.3"/>
+        <path d="M60 10 A50 50 0 1 0 60 110 A38 38 0 1 1 60 10" fill="#D9B89C" opacity="0.6"/>
+        <circle cx="75" cy="45" r="3" fill="#2F477A" opacity="0.4"/>
+        <circle cx="50" cy="70" r="2" fill="#2F477A" opacity="0.3"/>
+        <circle cx="68" cy="78" r="1.5" fill="#2F477A" opacity="0.25"/>
+      </svg>
+
+      <div class="hero__phases" aria-hidden="true">
+        <span class="hero__phase"></span>
+        <span class="hero__phase hero__phase--waxing"></span>
+        <span class="hero__phase hero__phase--full"></span>
+        <span class="hero__phase hero__phase--waning"></span>
+        <span class="hero__phase"></span>
+      </div>
+
+      <svg class="hero__botanical" viewBox="0 0 400 500" fill="none" aria-hidden="true">
+        <path d="M200 480 Q195 350 200 250 Q205 150 200 40" stroke="#C86D38" stroke-width="0.8" opacity="0.4"/>
+        <path d="M200 300 Q120 280 80 220 Q60 180 50 140" stroke="#C86D38" stroke-width="0.6" opacity="0.35"/>
+        <path d="M200 300 Q280 280 320 220 Q340 180 350 140" stroke="#C86D38" stroke-width="0.6" opacity="0.35"/>
+        <path d="M200 200 Q130 170 100 120 Q85 90 90 60" stroke="#C86D38" stroke-width="0.5" opacity="0.3"/>
+        <path d="M200 200 Q270 170 300 120 Q315 90 310 60" stroke="#C86D38" stroke-width="0.5" opacity="0.3"/>
+        <ellipse cx="50" cy="135" rx="18" ry="10" transform="rotate(-30 50 135)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.4"/>
+        <ellipse cx="350" cy="135" rx="18" ry="10" transform="rotate(30 350 135)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.4"/>
+        <ellipse cx="90" cy="55" rx="14" ry="8" transform="rotate(-20 90 55)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.35"/>
+        <ellipse cx="310" cy="55" rx="14" ry="8" transform="rotate(20 310 55)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.35"/>
+        <circle cx="200" cy="35" r="6" stroke="#8A69B8" stroke-width="0.5" fill="none" opacity="0.5"/>
+        <circle cx="200" cy="35" r="2" fill="#8A69B8" opacity="0.4"/>
+      </svg>
+
+      <div class="hero__content">
+        <p class="hero__eyebrow">Atelier de rituales botánicos</p>
+        <h1 class="hero__title" id="hero-title">Pausa.<br>Inhalá.<br><em>Volvé a vos.</em></h1>
+        <p class="hero__statement">BONNY nace del encuentro entre la naturaleza, la luna y el cuerpo. Creamos fragancias y rituales artesanales para quienes eligen la belleza lenta, consciente y profundamente personal.</p>
+        <div class="hero__cta-wrap">
+          <a href="#productos" class="btn">Descubrí los rituales</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <span>Deslizá</span>
+        <div class="hero__scroll-line"></div>
+      </div>
+    </section>
+
+    <section class="about" id="nosotros" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="about__frame" aria-hidden="true"></div>
+            <div class="about__illustration">
+              <svg viewBox="0 0 300 380" fill="none" aria-hidden="true">
+                <circle cx="150" cy="80" r="50" stroke="#C86D38" stroke-width="0.5" opacity="0.3"/>
+                <path d="M150 35 A45 45 0 0 1 150 125 A30 30 0 0 0 150 35" fill="#D9B89C" opacity="0.5"/>
+                <path d="M150 370 Q148 280 150 200 Q152 120 150 130" stroke="#C86D38" stroke-width="0.7" opacity="0.5"/>
+                <path d="M150 250 Q80 230 50 180" stroke="#C86D38" stroke-width="0.5" opacity="0.35"/>
+                <path d="M150 250 Q220 230 250 180" stroke="#C86D38" stroke-width="0.5" opacity="0.35"/>
+                <path d="M150 190 Q90 160 70 110" stroke="#C86D38" stroke-width="0.4" opacity="0.3"/>
+                <path d="M150 190 Q210 160 230 110" stroke="#C86D38" stroke-width="0.4" opacity="0.3"/>
+                <ellipse cx="48" cy="175" rx="20" ry="11" transform="rotate(-25 48 175)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.4"/>
+                <ellipse cx="252" cy="175" rx="20" ry="11" transform="rotate(25 252 175)" stroke="#C86D38" stroke-width="0.5" fill="none" opacity="0.4"/>
+                <path d="M120 320 Q150 300 180 320" stroke="#8A69B8" stroke-width="0.4" opacity="0.4"/>
+                <circle cx="150" cy="310" r="4" stroke="#2F477A" stroke-width="0.5" fill="none" opacity="0.35"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="about__text-block reveal">
+            <p class="section-label">Nuestra historia</p>
+            <h2 class="section-title" id="about-title">Donde la tierra<br>se vuelve <em>ritual</em></h2>
+            <p>BONNY es un atelier íntimo donde cada fórmula se elabora a mano, en pequeños lotes, con ingredientes botánicos elegidos por su aroma, su tacto y su memoria sensorial. No fabricamos productos: tejemos experiencias para el cuerpo y el alma.</p>
+            <p>Creemos que el autocuidado no es un lujo reservado para ocasiones especiales. Es un gesto cotidiano de ternura hacia uno mismo — una pausa breve antes de seguir el día, un suspiro profundo al anochecer, un perfume que te recuerda quién sos.</p>
+          </div>
+        </div>
+
+        <div class="about__pillars">
+          <article class="pillar reveal">
+            <h3 class="pillar__title">Filosofía del ritual</h3>
+            <p class="pillar__text">Cada producto BONNY invita a un momento de presencia. Aplicarlo no es un paso más en la rutina: es una ceremonia breve de reconexión con el cuerpo, la respiración y el presente.</p>
+          </article>
+          <article class="pillar reveal">
+            <h3 class="pillar__title">Inspiración botánica</h3>
+            <p class="pillar__text">Nos guían las estaciones, la luna y lo que crece en la tierra. Lavanda, rosa mosqueta, cedro, jazmín nocturno — notas que evocan jardines al amanecer y bosques después de la lluvia.</p>
+          </article>
+          <article class="pillar reveal">
+            <h3 class="pillar__title">Belleza consciente</h3>
+            <p class="pillar__text">Elegimos ingredientes naturales, procesos artesanales y envases que honran lo hecho con calma. Porque la belleza lenta también es una forma de cuidar el mundo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="productos" aria-labelledby="products-title">
+      <div class="container">
+        <header class="products__header reveal">
+          <p class="section-label">Colección</p>
+          <h2 class="section-title" id="products-title">Rituales para<br>el <em>cuerpo y el alma</em></h2>
+          <p>Seis creaciones artesanales pensadas para transformar lo cotidiano en algo sagrado.</p>
+        </header>
+
+        <div class="products__grid">
+
+          <article class="product-card reveal">
+            <span class="product-card__number">01</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <rect x="48" y="30" width="24" height="55" rx="3" stroke="#C86D38" stroke-width="0.8"/>
+                <path d="M52 30 Q60 15 68 30" stroke="#C86D38" stroke-width="0.6"/>
+                <circle cx="60" cy="50" r="4" fill="#D9B89C" opacity="0.6"/>
+                <path d="M30 90 Q60 75 90 90" stroke="#C86D38" stroke-width="0.4" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Perfume</h3>
+              <p class="product-card__desc">Notas que se posan sobre la piel como un recuerdo luminoso. Una firma olfativa íntima, tejida con aceites esenciales y el susurro de flores silvestres.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__number">02</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <ellipse cx="60" cy="70" rx="30" ry="18" stroke="#C86D38" stroke-width="0.8"/>
+                <path d="M35 65 Q60 45 85 65" stroke="#C86D38" stroke-width="0.5" opacity="0.4"/>
+                <circle cx="60" cy="40" r="8" stroke="#D9B89C" stroke-width="0.6"/>
+                <path d="M60 48 L60 52" stroke="#C86D38" stroke-width="0.5"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Jabón Natural</h3>
+              <p class="product-card__desc">Espuma suave, aceites vegetales y arcillas puras. Un gesto de limpieza que abraza la piel y despierta los sentidos con aromas de jardín.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__number">03</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M55 25 L55 85" stroke="#C86D38" stroke-width="0.8"/>
+                <path d="M55 30 Q40 35 38 50 Q36 65 55 70" stroke="#C86D38" stroke-width="0.6"/>
+                <path d="M65 30 Q80 35 82 50 Q84 65 65 70" stroke="#C86D38" stroke-width="0.6"/>
+                <path d="M30 90 Q60 80 90 90" stroke="#C86D38" stroke-width="0.3" opacity="0.3"/>
+                <circle cx="60" cy="20" r="3" fill="#8A69B8" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Bruma Capilar</h3>
+              <p class="product-card__desc">Un velo aromático para el cabello. Bruma ligera que envuelve cada hebra con fragancias botánicas y deja un rastro etéreo a tu paso.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__number">04</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M60 20 L60 90" stroke="#C86D38" stroke-width="0.8"/>
+                <ellipse cx="60" cy="55" rx="22" ry="30" stroke="#C86D38" stroke-width="0.6" opacity="0.5"/>
+                <path d="M45 55 Q60 40 75 55" stroke="#D9B89C" stroke-width="0.5"/>
+                <circle cx="60" cy="15" r="4" stroke="#2F477A" stroke-width="0.5" fill="none" opacity="0.4"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Bruma Cabello y Cuerpo</h3>
+              <p class="product-card__desc">Dos mundos en una sola bruma. Para piel y cabello, una fragancia versátil que acompaña tu ritual de mañana o tu pausa de mediodía.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__number">05</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <path d="M45 40 Q60 30 75 40 L78 85 Q60 95 42 85 Z" stroke="#C86D38" stroke-width="0.8"/>
+                <path d="M50 50 Q60 55 70 50" stroke="#D9B89C" stroke-width="0.5" opacity="0.6"/>
+                <ellipse cx="60" cy="65" rx="12" ry="8" stroke="#C86D38" stroke-width="0.4" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Manteca Corporal</h3>
+              <p class="product-card__desc">Crema untuosa de mantecas vegetales y aceites prensados en frío. Nutrición profunda que se funde con la piel como un abrazo cálido.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal">
+            <span class="product-card__number">06</span>
+            <div class="product-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 120 120" fill="none">
+                <rect x="42" y="35" width="36" height="50" rx="18" stroke="#C86D38" stroke-width="0.8"/>
+                <path d="M50 55 Q60 48 70 55" stroke="#D9B89C" stroke-width="0.5"/>
+                <circle cx="60" cy="65" r="5" stroke="#C86D38" stroke-width="0.4" fill="none" opacity="0.4"/>
+                <path d="M60 85 L60 95" stroke="#C86D38" stroke-width="0.5" opacity="0.3"/>
+              </svg>
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">Desodorante Natural</h3>
+              <p class="product-card__desc">Protección suave con ingredientes de la tierra. Sin químicos agresivos, con la frescura de hierbas y la certeza de un cuidado consciente.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="values" id="valores" aria-labelledby="values-title">
+      <div class="container values__inner">
+        <header class="values__header reveal">
+          <p class="section-label">Lo que nos guía</p>
+          <h2 class="section-title" id="values-title">Nuestros <em>valores</em></h2>
+        </header>
+
+        <div class="values__grid">
+          <article class="value-item reveal">
+            <svg class="value-item__symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <path d="M18 4 L18 32 M10 12 L18 4 L26 12" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M8 28 Q18 22 28 28" stroke="currentColor" stroke-width="0.6" opacity="0.5"/>
+            </svg>
+            <h3 class="value-item__name">Hecho a mano</h3>
+            <p class="value-item__text">Cada pieza es elaborada artesanalmente, con dedicación y tiempo. Nada sale de una línea de producción.</p>
+          </article>
+
+          <article class="value-item reveal">
+            <svg class="value-item__symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <path d="M18 32 Q8 22 8 14 Q8 6 18 6 Q28 6 28 14 Q28 22 18 32" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M18 6 Q14 14 18 22 Q22 14 18 6" stroke="currentColor" stroke-width="0.5" opacity="0.5"/>
+            </svg>
+            <h3 class="value-item__name">Ingredientes naturales</h3>
+            <p class="value-item__text">Botánicos puros, aceites esenciales y materias primas elegidas por su origen y su pureza.</p>
+          </article>
+
+          <article class="value-item reveal">
+            <svg class="value-item__symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <circle cx="18" cy="18" r="12" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M12 18 L16 22 L24 14" stroke="currentColor" stroke-width="0.6"/>
+            </svg>
+            <h3 class="value-item__name">Producción en lotes pequeños</h3>
+            <p class="value-item__text">Pequeñas tiradas que garantizan frescura, calidad y atención al detalle en cada fórmula.</p>
+          </article>
+
+          <article class="value-item reveal">
+            <svg class="value-item__symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <circle cx="18" cy="16" r="8" stroke="currentColor" stroke-width="0.8"/>
+              <path d="M10 30 Q18 24 26 30" stroke="currentColor" stroke-width="0.6"/>
+            </svg>
+            <h3 class="value-item__name">Libre de crueldad</h3>
+            <p class="value-item__text">Nunca testeamos en animales. Nuestro compromiso es con la vida en todas sus formas.</p>
+          </article>
+
+          <article class="value-item reveal">
+            <svg class="value-item__symbol" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+              <path d="M18 30 Q6 20 6 12 Q6 4 18 8 Q30 4 30 12 Q30 20 18 30" stroke="currentColor" stroke-width="0.8"/>
+            </svg>
+            <h3 class="value-item__name">Autocuidado consciente</h3>
+            <p class="value-item__text">Invitamos a ralentizar, respirar y elegir productos que honren el cuerpo y el planeta.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonios" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="testimonials__header reveal">
+          <p class="section-label">Voces</p>
+          <h2 class="section-title" id="testimonials-title">Lo que dicen<br>quienes <em>ritualizan</em></h2>
+        </header>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial__text">El perfume BONNY se convirtió en mi ritual de cada mañana. Es suave, profundo, y me hace sentir que el día empieza con intención. Nunca un aroma me había hecho pausar así.</p>
+            <footer>
+              <cite class="testimonial__author">Valentina Morales</cite>
+              <p class="testimonial__location">Palermo, Buenos Aires</p>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial__text">Probé la manteca corporal por recomendación de una amiga y fue un antes y un después. La textura, el aroma a lavanda y la sensación en la piel son de otro mundo. Se nota que está hecho con amor.</p>
+            <footer>
+              <cite class="testimonial__author">Camila Ríos</cite>
+              <p class="testimonial__location">Córdoba Capital</p>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial reveal">
+            <div class="testimonial__quote-mark" aria-hidden="true">"</div>
+            <p class="testimonial__text">Compré el jabón natural y el desodorante juntos. Llevo tres meses usándolos y mi piel nunca se sintió tan cuidada. BONNY entiende lo que significa belleza consciente de verdad.</p>
+            <footer>
+              <cite class="testimonial__author">Florencia Acosta</cite>
+              <p class="testimonial__location">Rosario, Santa Fe</p>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container contact__grid">
+        <div class="contact__intro reveal">
+          <p class="section-label">Escríbenos</p>
+          <h2 class="section-title" id="contact-title">Conversemos<br>sobre <em>rituales</em></h2>
+          <p>Si querés conocer más sobre nuestras creaciones, hacer un pedido especial o simplemente compartir tu experiencia con BONNY, estamos acá para escucharte.</p>
+        </div>
+
+        <form class="contact__form reveal" aria-label="Formulario de contacto">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn">Enviar mensaje</button>
+          <p class="form__feedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <span class="footer__logo">BONNY</span>
+        <p class="footer__statement">Fragancias y rituales artesanales para quienes eligen la belleza lenta, consciente y profundamente personal.</p>
+        <nav class="footer__social" aria-label="Redes sociales">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">Pinterest</a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">TikTok</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 BONNY. Todos los derechos reservados.</span>
+        <span>Hecho con calma en Argentina.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
