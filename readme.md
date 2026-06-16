@@ -12,7 +12,7 @@
 
 Link al sitio publicado en Vercel:
 
-https://landingpagebonny.vercel.app/
+https://landingpage.vercel.app/
 
 Este link dirige a la página principal donde se encuentran las dos landing pages generadas por diferentes agentes de IA.
 
