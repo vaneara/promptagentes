@@ -173,7 +173,6 @@ Do not combine them into a single file.
 ### Landing Page 2 (Cascade)
 ![Landing 2 Hero](./screenshots/lan2hero.png) ![Landing 2 About](./screenshots/lan2about.png) ![Landing 2 Testimonios](./screenshots/lan2testimonios.png) ![Landing 2 Footer](./screenshots/lan2footer.png)
 
----
 
 ## Estructura del proyecto
 
